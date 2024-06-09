@@ -1,0 +1,148 @@
+.herHome {
+  padding: 120px;
+  .secondary {
+    font-size: 72px;
+    margin-top: 200px;
+    .Typewriter {
+      display: inline-block;
+    }
+    .down_arrow {
+      position: absolute;
+      top: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation: bounce 2s ease-in-out infinite;
+      svg {
+        transform: rotate(90deg) scale(7);
+        stroke: #ffffff;
+      }
+    }
+  }
+
+  .her_img {
+    position: absolute;
+    right: 0%;
+    bottom: -5%;
+    filter: grayscale(100%);
+    transition: all 1s ease;
+    transform: scale(2);
+    &:hover {
+      filter: grayscale(0%);
+    }
+  }
+}
+
+.you,
+.me,
+.us {
+  padding: 120px;
+  position: relative;
+  background-color: #000000;
+
+  h1 {
+    font-size: 96px;
+    color: #ffffff;
+    margin: 0 0 50px 0;
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: "";
+      border-bottom: 3px solid #ffffff;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 0;
+      width: 90%;
+      left: 10%;
+    }
+  }
+  .container {
+    column-count: 4;
+    column-gap: 10px;
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+    figure {
+      display: grid;
+      grid-template-rows: 1fr auto;
+      margin-bottom: 10px;
+      break-inside: avoid;
+      img {
+        grid-row: 1 / -1;
+        grid-column: 1;
+      }
+    }
+  }
+}
+
+.us {
+  .container {
+    column-count: 3;
+    column-gap: 10px;
+  }
+}
+
+.plus {
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid white;
+    border-radius: 10px;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 2;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid white;
+    border-radius: 10px;
+    bottom: -5%;
+
+    left: 50%;
+    transform: translateX(-50%) rotate(90deg);
+    width: 100px;
+    z-index: 2;
+  }
+}
+
+.equals {
+  &::after {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid white;
+    border-radius: 10px;
+    bottom: -5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 2;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    border-bottom: 20px solid white;
+    border-radius: 10px;
+    bottom: -2%;
+
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    z-index: 2;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    top: 80%;
+  }
+  50% {
+    top: 85%;
+  }
+  100% {
+    top: 80%;
+  }
+}

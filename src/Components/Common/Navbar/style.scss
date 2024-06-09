@@ -1,0 +1,51 @@
+.navbar-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  align-items: flex-start;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  z-index: 9;
+  .logo_wrapper {
+   
+    position: fixed;
+    top: 0;
+    left: 10px;
+    img {
+      width: 100px;
+
+    }
+  }
+  .nav-items {
+    background-color: black;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 50px;
+    margin: 10px 0;
+    width: 50px;
+    transition: 0.5s ease;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &.selected {
+      background-color: #0563bb;
+    }
+
+    .text {
+      font-size: 12px;
+      visibility: hidden;
+      opacity: 0;
+      transition: visibility 0s, opacity 0.4s linear;
+    }
+    &:hover {
+      width: 100%;
+
+      .text {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
