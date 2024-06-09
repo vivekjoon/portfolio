@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.e8ffe925.css",
-    "main.js": "/static/js/main.1a62d3a7.js",
+    "main.css": "/static/css/main.45c55f19.css",
+    "main.js": "/static/js/main.f3003d27.js",
     "static/js/787.7da95b79.chunk.js": "/static/js/787.7da95b79.chunk.js",
     "static/media/img1.webp": "/static/media/img1.2417ba8964f08412fc16.webp",
     "static/media/img2.webp": "/static/media/img2.19209477588b6eedb0e9.webp",
@@ -19,6 +19,7 @@
     "static/media/sass.png": "/static/media/sass.7cdbf6b5889c42b3e490.png",
     "static/media/khyati_without_bg.png": "/static/media/khyati_without_bg.d947c44a652b734fe737.png",
     "static/media/typescript.png": "/static/media/typescript.27d81a586e4448a5e671.png",
+    "static/media/VivekJoon.png": "/static/media/VivekJoon.8f5645e21cf2766dba08.png",
     "static/media/JavaScript-logo.png": "/static/media/JavaScript-logo.266bd9fb2663dcc057b4.png",
     "static/media/skills.svg": "/static/media/skills.7d2e2c31c9c63ec7f71f859f8d0e4c07.svg",
     "static/media/instagram.svg": "/static/media/instagram.01a51e59240c84f5a66a637412768350.svg",
@@ -31,12 +32,12 @@
     "static/media/mail.svg": "/static/media/mail.6ced57a88abc18bcc100f7d69cdf1ad7.svg",
     "static/media/blog.svg": "/static/media/blog.b88979aacfcf33b7c6aaf8a003b2353a.svg",
     "static/media/right_arrow.svg": "/static/media/right_arrow.327bc191ecad615a7b17674948c889bc.svg",
-    "main.e8ffe925.css.map": "/static/css/main.e8ffe925.css.map",
-    "main.1a62d3a7.js.map": "/static/js/main.1a62d3a7.js.map",
+    "main.45c55f19.css.map": "/static/css/main.45c55f19.css.map",
+    "main.f3003d27.js.map": "/static/js/main.f3003d27.js.map",
     "787.7da95b79.chunk.js.map": "/static/js/787.7da95b79.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e8ffe925.css",
-    "static/js/main.1a62d3a7.js"
+    "static/css/main.45c55f19.css",
+    "static/js/main.f3003d27.js"
   ]
 }
