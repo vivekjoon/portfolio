@@ -37,7 +37,7 @@ const HerHome = () => {
   };
   return (
     <>
-      <div className=" herHome bg-[black] min-h-[120vh]">
+      <div className=" herHome bg-[#171717] min-h-[120vh]">
         <button
           className="bg-white px-[30px] py-[10px] rounded-[50px] top-[20px] right-[20px] z-10 fixed hover:bg-[#0563bb] hover:text-white duration-300"
           onClick={logoutHandler}
@@ -112,7 +112,7 @@ const HerHome = () => {
           Answer a Question
         </button>
       </div> */}
-      <div className="min-h-[50vh] bg-black p-[120px] flex items-center flex-col">
+      <div className="min-h-[50vh] bg-[#171717] p-[120px] flex items-center flex-col">
         <h1 className="text-[48px] text-white">Work in progress</h1>
       </div>
     </>

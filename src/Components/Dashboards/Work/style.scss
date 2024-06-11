@@ -1,15 +1,15 @@
 .work-wrapper {
   overflow: hidden;
-  background-color: #000000;
+  background-color: #171717;
   width: 100%;
-  color: white;
+  color: #e8e8e8;
   padding-left: 18%;
   padding-top: 50px;
   padding-bottom: 50px;
   .main_heading {
     margin: 40px;
     padding: 10px;
-    border: 1px solid white;
+    border: 1px solid #e8e8e8;
     // background-color: ;
     border-radius: 10px;
     display: inline-block;
@@ -24,7 +24,7 @@
       left: 0;
       height: 100%;
       width: 0;
-      background-color: white;
+      background-color: #e8e8e8;
       border-radius: 10px;
       z-index: -1;
       transition: all 250ms;
@@ -38,7 +38,7 @@
 
   }
   .wroks {
-    color: white;
+    color: #e8e8e8;
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
@@ -47,7 +47,7 @@
     .work-item {
       position: relative;
       border-radius: 10px;
-      border: 1px solid white;
+      border: 1px solid #e8e8e8;
       padding: 10px;
       width: 25%;
       position: relative;
@@ -61,7 +61,7 @@
         left: 0;
         height: 100%;
         width: 0;
-        background-color: white;
+        background-color: #e8e8e8;
         border-radius: 10px;
         z-index: -1;
         transition: all 250ms;
@@ -71,7 +71,7 @@
       &:hover {
         // border: unset;
         .heading {
-          background-color: black;
+          background-color: #171717;
           transition: all 500ms;
         }
         .description {
@@ -98,8 +98,8 @@
         position: absolute;
         top: 10px;
         left: -60px;
-        background-color: white;
-        color: black;
+        background-color: #e8e8e8;
+        color: #171717;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -157,7 +157,7 @@
 //   top: -10px;
 //   font-size: 14px;
 //   color: #999;
-//   background-color: white;
+//   background-color: #e8e8e8;
 
 // }
 
