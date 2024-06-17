@@ -39,6 +39,11 @@ import My10 from "../Assets/me/img10.webp";
 import Us1 from "../Assets/us/img1.webp";
 import Us3 from "../Assets/us/img2.webp";
 import Us2 from "../Assets/us/img3.webp";
+import {ReactComponent as TTNLogo} from "../Assets/Companies/ttn.svg";
+import {ReactComponent as DTLogo} from "../Assets/Companies/DT.svg";
+import  MyLogo from "../Assets/VivekJoon.png";
+
+
 
 export const NavbarItems = [
   { name: "Home", toLink: "/", icon: <HomeIcon />, id: "home" },
@@ -140,39 +145,105 @@ export const myImgs = [
 
 export const OurImgs = [{ src: Us1 }, { src: Us2 }, { src: Us3 }];
 
+// export const Works = [
+//   {
+//     name: "CKLENS",
+//     description:
+//       "CloudKeeper from TO THE NEW, is a cloud spend optimization solution that guarantees to cut down your AWS bills by 5-15%. With CloudKeeper, we have helped 200+ of our customers optimize their AWS spend with a guaranteed reduction in their AWS bills. No lock-ins. Savings from Day 1. RI pricing for On-demand usage.",
+//   },
+//   {
+//     name: "CK-Analytics",
+//     description:
+//       "Analytical dashboard for inventory management of the instances we are buying for our clients.",
+//   },
+//   {
+//     name: "CK-Auto",
+//     description:
+//       "The complexities of AWS RI management are real, but we are here to make it effortless for you. CloudKeeper Auto addresses all the challenges of AWS RI management at no extra cost. It makes the process hassle-free by automating RI buying and selling as per infrastructure needs while maximizing your savings on compute and RDS instances",
+//   },
+//   {
+//     name: "HR Chauffeur",
+//     description:
+//       "HR-Chauffeur is a premier provider of luxury transportation services, serving clients throughout perth, Australia. A team of experienced and professional chauffeurs is dedicated to providing you with a safe, comfortable, and reliable travel experience.",
+//   },
+//   {
+//     name: "Cloudonomics",
+//     description:
+//       "White labeled product of Cklens. Multiple modules offering for clients (i.e Cklens, CK-Auto, CK-Analytics).",
+//   },
+//   {
+//     name: "Unicaps",
+//     description:
+//       "Unicaps, an ultimate solution for seamless and secure financial transactions in the digital age. Revolutionizing the way you handle payments, our app combines cutting-edge technology with user-friendly design to provide you with a hassle-free and efficient payment experience.",
+//   },
+//   {
+//     name: "MAVI - Sales And Booking",
+//     description: "this i fikwlmncvlndvipkmflkv szdk  fvnpofsk fkvn lkfvn ipkfmnv lef diknvsk ",
+//   },
+// ];
+
+
 export const Works = [
   {
-    name: "CKLENS",
-    description:
-      "CloudKeeper from TO THE NEW, is a cloud spend optimization solution that guarantees to cut down your AWS bills by 5-15%. With CloudKeeper, we have helped 200+ of our customers optimize their AWS spend with a guaranteed reduction in their AWS bills. No lock-ins. Savings from Day 1. RI pricing for On-demand usage.",
+    companyName: "TO THE NEW",
+    from: "August, 2021",
+    to: "January, 2023",
+    isSelected: true,
+    logo: <TTNLogo />,
+    projects: [
+      {
+        projectName: "CK-Lens",
+        from: "November, 2021",
+        to: "May, 2022",
+      },
+      {
+        projectName: "CK-Analytics",
+        from: "May, 2022",
+        to: "January, 2023",
+      },
+      {
+        projectName: "Cloudkeeper",
+        from: "January, 2023",
+        to: "January, 2024",
+      },
+      {
+        projectName: "CK-Auto",
+        from: "June, 2023",
+        to: "August, 2023",
+      },
+    ],
   },
   {
-    name: "CK-Analytics",
-    description:
-      "Analytical dashboard for inventory management of the instances we are buying for our clients.",
+    companyName: "Deutsche Telekom",
+    from: "February, 2023",
+    to: "Present",
+    current: true,
+    logo: <DTLogo />,
+    projects: [
+      {
+        projectName: "MAVI - Sales and Booking",
+        from: "March, 2024",
+        to: "May, 2024",
+      },
+      {
+        projectName: "MAVI - Commerce",
+        from: "June, 2024",
+        to: "Present",
+      }
+    ],
   },
   {
-    name: "CK-Auto",
-    description:
-      "The complexities of AWS RI management are real, but we are here to make it effortless for you. CloudKeeper Auto addresses all the challenges of AWS RI management at no extra cost. It makes the process hassle-free by automating RI buying and selling as per infrastructure needs while maximizing your savings on compute and RDS instances",
-  },
-  {
-    name: "HR Chauffeur",
-    description:
-      "HR-Chauffeur is a premier provider of luxury transportation services, serving clients throughout perth, Australia. A team of experienced and professional chauffeurs is dedicated to providing you with a safe, comfortable, and reliable travel experience.",
-  },
-  {
-    name: "Cloudonomics",
-    description:
-      "White labeled product of Cklens. Multiple modules offering for clients (i.e Cklens, CK-Auto, CK-Analytics).",
-  },
-  {
-    name: "Unicaps",
-    description:
-      "Unicaps, an ultimate solution for seamless and secure financial transactions in the digital age. Revolutionizing the way you handle payments, our app combines cutting-edge technology with user-friendly design to provide you with a hassle-free and efficient payment experience.",
-  },
-  {
-    name: "MAVI - Sales And Booking",
-    description: "this i fikwlmncvlndvipkmflkv szdk  fvnpofsk fkvn lkfvn ipkfmnv lef diknvsk ",
+    companyName: "Independent Projects",
+    from: "January, 2023",
+    to: "Present",
+    current: true,
+    image: MyLogo,
+    projects: [
+      {
+        projectName: "HR-Chauffeur",
+        from: "January, 2023",
+        to: "March, 2023",
+      },
+    ],
   },
 ];
