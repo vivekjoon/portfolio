@@ -39,18 +39,21 @@ import My10 from "../Assets/me/img10.webp";
 import Us1 from "../Assets/us/img1.webp";
 import Us3 from "../Assets/us/img2.webp";
 import Us2 from "../Assets/us/img3.webp";
-import {ReactComponent as TTNLogo} from "../Assets/Companies/ttn.svg";
-import {ReactComponent as DTLogo} from "../Assets/Companies/DT.svg";
-import  MyLogo from "../Assets/VivekJoon.png";
 
+import { ReactComponent as TTNLogo } from "../Assets/Companies/ttn.svg";
+import { ReactComponent as DTLogo } from "../Assets/Companies/DT.svg";
+import MyLogo from "../Assets/VivekJoon.png";
 
+import Reacptcha from "../Assets/Blogs/recaptcha.jpg";
+import SSO from "../Assets/Blogs/Google_SSO.jpeg";
+import DemistifyBlog from "../Assets/Blogs/demistify_blog.webp";
 
 export const NavbarItems = [
   { name: "Home", toLink: "/", icon: <HomeIcon />, id: "home" },
   { name: "Skills", toLink: "/skills", icon: <SkillsIcon />, id: "skills" },
   { name: "Projects", toLink: "/projects", icon: <WorkIcon />, id: "work" },
-  { name: "Blogs", toLink: "/blog", icon: <BlogIcon /> },
-  { name: "Contact Me", toLink: "/blog", icon: <MailIcon /> },
+  { name: "Blogs", toLink: "/blog", icon: <BlogIcon />, id: "blog" },
+  { name: "Contact Me", toLink: "/blog", icon: <MailIcon />, id: "contact_me" },
 ];
 
 export const HomepageSocial = [
@@ -182,7 +185,6 @@ export const OurImgs = [{ src: Us1 }, { src: Us2 }, { src: Us3 }];
 //   },
 // ];
 
-
 export const Works = [
   {
     companyName: "TO THE NEW",
@@ -229,7 +231,7 @@ export const Works = [
         projectName: "MAVI - Commerce",
         from: "June, 2024",
         to: "Present",
-      }
+      },
     ],
   },
   {
@@ -245,5 +247,27 @@ export const Works = [
         to: "March, 2023",
       },
     ],
+  },
+];
+
+export const BlogsData = [
+  {
+    title:
+      "Enhancing Security on Login User Experience: A Guide to Implementing Google reCAPTCHA v3 in React.js",
+    image: Reacptcha,
+    description: "",
+    link: "https://medium.com/@vivekjoon1234/enhancing-security-and-user-experience-a-guide-to-implementing-google-recaptcha-v3-in-react-js-884b21bcbb79",
+  },
+  {
+    title: "Implementing Google Single Sign-On (SSO) in ReactJS",
+    image: SSO,
+    description: "",
+    link: "https://medium.com/@vivekjoon1234/implementing-google-single-sign-on-sso-in-reactjs-32f81d48850f",
+  },
+  {
+    title: "Demystifying Authentication and Authorization in React Apps",
+    image: DemistifyBlog,
+    description: "",
+    link: "https://medium.com/@vivekjoon1234/demystifying-authentication-and-authorization-in-react-apps-2eed560683d8",
   },
 ];

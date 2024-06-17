@@ -10,19 +10,21 @@ const Skills = () => {
       </header>
 
       {/* <div className="m-auto text-white"> */}
-        {skills?.map((item, index) => {
-          return (
-            <div
-              key={`bubble-${index}`}
-              className={`absolute text-left-wrapper bubble ${item?.class} `}
-              style={{ animationDuration: item?.duration }}
-            >
-              <img src={item?.logo} alt={item?.name} className="max-w-[80px]" />
-              <div className="font-bold mt-[10px] text-[12px]">{item?.name}</div>
-              {/* <span>{item?.rating}</span> */}
+      {skills?.map((item, index) => {
+        return (
+          <div
+            key={`bubble-${index}`}
+            className={`absolute text-left-wrapper bubble ${item?.class} `}
+            style={{ animationDuration: item?.duration }}
+          >
+            <img src={item?.logo} alt={item?.name} className="max-w-[80px]" />
+            <div className="font-bold mt-[10px] text-[12px] text-[#fff]">
+              {item?.name}
             </div>
-          );
-        })}
+            {/* <span>{item?.rating}</span> */}
+          </div>
+        );
+      })}
       {/* </div> */}
     </section>
   );

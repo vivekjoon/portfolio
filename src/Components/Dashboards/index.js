@@ -8,6 +8,8 @@ import Work from "./Work";
 import { Navigate, Route, Routes, useNavigate } from "react-router";
 import HerComponent from "./Her";
 import HerHome from "./Her/HerHome";
+import Blogs from "./Blog";
+import ContactMe from "./ContactMe";
 
 const Dashboard = () => {
   const navigate = useNavigate();
@@ -48,6 +50,8 @@ const Dashboard = () => {
                 <Home />
                 <Skills />
                 <Work />
+                <Blogs />
+                <ContactMe />
               </div>
               {returnDownloadButton()}
             </>
