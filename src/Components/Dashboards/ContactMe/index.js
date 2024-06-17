@@ -1,20 +1,27 @@
 import React from "react";
 import "./style.scss";
 import ContactMeForm from "./contactMeForm";
+import { ReactComponent as MailIcon } from "../../../Assets/NavIcons/mail.svg";
 
 const ContactMe = () => {
   return (
-    <div className="h-[100vh] relative contact_wrapper" id="contact_me">
-      {/* <div className="left">
+    <section className="h-[100vh] relative contact_wrapper" id="contact_me">
+      <div className="left">
         <h1>Let's chat.</h1>
         <h1>Tell me about your project.</h1>
         <p>Let's create something together</p>
-        <div className="card"><p>this is image</p><p>Mail me at <span>vivekjoon2215@gmail.com</span></p></div>
+        <div className="card">
+          <MailIcon className="inline-block mail" />
+          <div className="ml-[50px]">
+            <p className="">Mail me at</p>
+            <span><a href="mailto:vivekjoon2215@gmail.com">vivekjoon2215@gmail.com</a></span>
+          </div>
+        </div>
       </div>
       <div className="right">
         <ContactMeForm />
-      </div> */}
-    </div>
+      </div>
+    </section>
   );
 };
 

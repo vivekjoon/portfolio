@@ -27,13 +27,13 @@ const ContactMeForm = () => {
         <input type="text" placeholder="Subject" name="subject" required />
       </div>
       <div className="">
-        <div>Tell us more about your project*</div>
-        <textarea name="message" required />
+        <div><label for="message">Tell us more about your project*</label></div>
+        <textarea name="message" id="message" required />
       </div>
       <div className="">
         <button
           type="submit"
-          className="bg-[#0563bb] text-white px-[30px] py-[10px] rounded-[50px] top-[20px] right-[190px] z-10"
+          className="bg-[#0563bb] text-white px-[30px] py-[10px] rounded-[50px]"
         >
           Send message
         </button>

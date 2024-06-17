@@ -12,21 +12,26 @@
   .left {
     width: 50%;
     h1 {
-      font-size: 32px;
+      font-size: 48px;
     }
     p {
-      font-size: 10px;
+      font-size: 16px;
     }
     .card {
       box-shadow: 6px 6px 10px #000, 1px 1px 10px hsla(0, 0%, 100%, 0.6);
       padding: 10px;
-      display: inline-block;
       border-radius: 12px;
-      margin-top: 10px;
-      p {
-        span {
-          color: #0563bb;
-        }
+      margin-top: 20px;
+      width: 350px;
+      position: relative;
+      .mail {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
+      }
+      span {
+        color: #0563bb;
       }
     }
   }
@@ -35,6 +40,8 @@
     // text-align: right;
     .form_wrapper {
       width: 70%;
+      box-shadow: 6px 6px 10px #000, 1px 1px 10px hsla(0, 0%, 100%, 0.6);
+      border: unset;
     }
   }
 }
@@ -52,16 +59,26 @@
   input {
     background-color: transparent;
     margin: 15px 0;
-    border: 1px solid white;
-    border-radius: 50px;
+    // border: 1px solid white;
+    // border-radius: 12px;
     padding: 5px 15px;
     width: 100%;
+    border-bottom: 1px solid #7a7a7a;
+    &:focus {
+      outline: none;
+    }
+    &:-webkit-autofill {
+      // background-color: #000 !important;
+      -webkit-box-shadow: 0 0 0 30px #171717 inset;
+      -webkit-text-fill-color: white;
+    }
   }
   textarea {
     background-color: transparent;
     margin-bottom: 10px;
-    border: 1px solid white;
+    // border: 1px solid white;
     outline: none;
+    border-bottom: 1px solid #7a7a7a;
     padding: 5px 15px;
     width: 100%;
   }

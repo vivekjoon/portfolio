@@ -53,7 +53,12 @@ export const NavbarItems = [
   { name: "Skills", toLink: "/skills", icon: <SkillsIcon />, id: "skills" },
   { name: "Projects", toLink: "/projects", icon: <WorkIcon />, id: "work" },
   { name: "Blogs", toLink: "/blog", icon: <BlogIcon />, id: "blog" },
-  { name: "Contact Me", toLink: "/blog", icon: <MailIcon />, id: "contact_me" },
+  {
+    name: "Contact Me",
+    toLink: "/contact",
+    icon: <MailIcon />,
+    id: "contact_me",
+  },
 ];
 
 export const HomepageSocial = [

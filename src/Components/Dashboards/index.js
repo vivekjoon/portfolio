@@ -25,7 +25,7 @@ const Dashboard = () => {
   });
   const returnDownloadButton = () => (
     <>
-      <button className="bg-[#0563bb] text-white px-[30px] py-[10px] rounded-[50px] top-[20px] right-[190px] z-10 fixed" onClick={() => navigate("/login")}>
+      <button className="bg-[#0563bb] text-white px-[30px] py-[10px] rounded-[50px] top-[20px] right-[210px] z-10 fixed" onClick={() => navigate("/login")}>
         Login
       </button>
       <a
