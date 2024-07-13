@@ -1,0 +1,16 @@
+.dashboard-wrapper {
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+@media (max-width: 700px) {
+  .download_cv_btn,
+  .login-btn {
+    font-size: 12px;
+    top: 32px;
+  }
+
+  .login-btn {
+    right: 180px;
+  }
+}

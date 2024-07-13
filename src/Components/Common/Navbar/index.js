@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import { NavbarItems } from "../../../Constants";
-import MyLogo from "../../../Assets/VivekJoon.png"
+import MyLogo from "../../../Assets/VivekJoon.png";
 
 const Navbar = () => {
   const [selected, setSelected] = useState("");
@@ -37,23 +37,27 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar-wrapper h-[100vh]">
-      <div className="logo_wrapper"><img src={MyLogo} /></div>
-      {NavbarItems?.map((item, index) => {
-        return (
-          <span
-            key={`${item?.id}-${index}`}
-            className={`nav-items !flex items-center ${
-              selected === item?.id ? "selected" : ""
-            }`}
-            onClick={() => goToSection(item?.id)}
-          >
-            <span className="">{item?.icon}</span>
-            <span className="text ml-[8px] font-medium">{item?.name}</span>
-          </span>
-        );
-      })}
-    </nav>
+    <>
+      <div className="main_logo_wrapper">
+        <img src={MyLogo} />
+      </div>
+      <nav className="navbar-wrapper h-[100vh]">
+        {NavbarItems?.map((item, index) => {
+          return (
+            <span
+              key={`${item?.id}-${index}`}
+              className={`nav-items !flex items-center ${
+                selected === item?.id ? "selected" : ""
+              }`}
+              onClick={() => goToSection(item?.id)}
+            >
+              <span className="">{item?.icon}</span>
+              <span className="text ml-[8px] font-medium">{item?.name}</span>
+            </span>
+          );
+        })}
+      </nav>
+    </>
   );
 };
 

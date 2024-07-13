@@ -1,3 +1,12 @@
+.main_logo_wrapper {
+  position: fixed;
+  top: 0;
+  left: 10px;
+  img {
+    width: 100px;
+  }
+}
+
 .navbar-wrapper {
   display: flex;
   flex-direction: column;
@@ -8,16 +17,7 @@
   top: 0;
   height: 100%;
   z-index: 9;
-  .logo_wrapper {
-   
-    position: fixed;
-    top: 0;
-    left: 10px;
-    img {
-      width: 100px;
 
-    }
-  }
   .nav-items {
     background-color: #171717;
     color: white;
@@ -45,6 +45,66 @@
       .text {
         visibility: visible;
         opacity: 1;
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .main_logo_wrapper {
+    position: fixed;
+    top: 0;
+    left: 10px;
+    img {
+      width: 100px;
+    }
+  }
+  .navbar-wrapper {
+    height: 100%;
+    flex-direction: row;
+    padding: 0 10px;
+    width: 100%;
+    gap: 20px;
+    position: fixed;
+    background-color: rgba(23, 23, 23, 0.7);
+    backdrop-filter: blur(8px);
+    top: 91vh;
+    z-index: 9;
+    .nav-items {
+      background-color: #171717;
+      color: white;
+      padding: 15px 15px;
+      border-radius: 50px;
+      margin: 10px 0;
+      width: 50px;
+      transition: 0.5s ease;
+      cursor: pointer;
+      white-space: nowrap;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+
+      &.selected {
+        background-color: #0563bb;
+        width: 50px;
+        .text {
+          display: none;
+          opacity: 0;
+        }
+      }
+
+      .text {
+        font-size: 12px;
+        display: none;
+        opacity: 0;
+      }
+      &:hover {
+        width: 50px;
+
+        .text {
+          display: none;
+          opacity: 0;
+        }
       }
     }
   }

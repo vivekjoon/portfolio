@@ -9,8 +9,7 @@
   .main_heading {
     margin: 40px 40px 80px 0;
     padding: 10px;
-    box-shadow: 6px 6px 10px #000,1px 1px 10px hsla(0,0%,100%,.6);
-    // background-color: ;
+    box-shadow: 6px 6px 10px #000, 1px 1px 10px hsla(0, 0%, 100%, 0.6);
     border-radius: 10px;
     display: inline-block;
     position: relative;
@@ -35,7 +34,6 @@
     &:hover::before {
       width: 100%;
     }
-
   }
   .works {
     display: flex;
@@ -60,7 +58,7 @@
       }
     }
     .card {
-      box-shadow: 6px 6px 10px #000,1px 1px 10px hsla(0,0%,100%,.6);
+      box-shadow: 6px 6px 10px #000, 1px 1px 10px hsla(0, 0%, 100%, 0.6);
       border-radius: 12px;
       padding: 20px 0;
       scale: 1;
@@ -73,8 +71,8 @@
       &.selected {
         // background-color: #e8e8e8;
         background-color: #0563bb;
-        scale: 1.1;  
-        // color: #2a2929;    
+        scale: 1.1;
+        // color: #2a2929;
       }
       .company_name {
         font-size: 24px;
@@ -86,77 +84,73 @@
       }
     }
   }
-  // .wroks {
-  //   color: #e8e8e8;
-  //   display: flex;
-  //   flex-wrap: wrap;
-  //   gap: 50px;
-  //   justify-content: space-evenly;
-    
-  //   .work-item {
-  //     position: relative;
-  //     border-radius: 10px;
-  //     border: 1px solid #e8e8e8;
-  //     padding: 10px;
-  //     width: 25%;
-  //     position: relative;
-  //     z-index: 1;
-  //     transition: all 250ms;
+}
 
-  //     &::before {
-  //       content: "";
-  //       position: absolute;
-  //       top: 0;
-  //       left: 0;
-  //       height: 100%;
-  //       width: 0;
-  //       background-color: #e8e8e8;
-  //       border-radius: 10px;
-  //       z-index: -1;
-  //       transition: all 250ms;
-  //       z-index: -1;
-  //       transition: all 250ms;
-  //     }
-  //     &:hover {
-  //       // border: unset;
-  //       .heading {
-  //         background-color: #171717;
-  //         transition: all 500ms;
-  //       }
-  //       .description {
-  //         color: #1f1e1e;
-  //       }
+@media (max-width: 700px) {
+  .work-wrapper {
+    padding: 50px;
+    .main_heading {
+      margin: 40px 40px 80px 40px;
+    }
+    .works {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      gap: 100px;
+      flex-direction: column;
+      .company_wrapper {
+        position: relative;
+        width: 100%;
+        &::before {
+          border-bottom: 1px solid white;
+          border-right: unset;
+          bottom: -50px;
+          right: 0;
+          border-radius: 0;
+          width: 100%;
+        }
+      }
+      // .project_wrapper {
+      //   width: 100%;
+      //   gap: 0;
+      //   .card {
+      //     padding: 50px;
+      //   }
+      // }
 
-  //     }
-  //     &:hover::before {
-  //       width: 100%;
-  //       padding: 10px;
-  //     }
+      .project_wrapper {
+        width: 100%;
+        flex-wrap: nowrap;
+        padding: 20px;
+        overflow: auto;
+        .card {
+          padding: 50px;
+          width: unset;
+        }
+      }
+      .card {
+        gap: 20px;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
 
-  //     .heading {
-  //       font-size: 24px;
-  //       background-color: #6d6c6c;
-  //       padding-left: 10px;
-  //       border-radius: 10px;
-  //     }
-  //     .description {
-  //       margin-top: 10px;
-  //       color: #8a8888;
-  //     }
-  //     .number {
-  //       position: absolute;
-  //       top: 10px;
-  //       left: -60px;
-  //       background-color: #e8e8e8;
-  //       color: #171717;
-  //       display: flex;
-  //       align-items: center;
-  //       justify-content: center;
-  //       height: 50px;
-  //       width: 50px;
-  //       border-radius: 50%;
-  //     }
-  //   }
-  // }
-
+        &:not(:last-child) {
+          margin-bottom: 30px;
+        }
+        &.selected {
+          background-color: #0563bb;
+          scale: 1;
+        }
+        .company_name {
+          font-size: 18px;
+          white-space: nowrap;
+        }
+        .duration {
+          font-size: 10px;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
 }

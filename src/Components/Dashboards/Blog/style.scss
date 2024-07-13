@@ -32,3 +32,43 @@
     }
   }
 }
+
+
+@media (max-width: 700px) { 
+
+  .blog-wrapper {
+
+    height: 100%;
+  
+    padding: 50px;
+    .cards-wrapper {
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 70px;
+      margin-top: 80px;
+      .card {
+        box-shadow: 6px 6px 10px #000, 1px 1px 10px hsla(0, 0%, 100%, 0.6);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        gap: 20px;
+        border-radius: 4px;
+        scale: 1;
+        transition: all 500ms;
+        text-align: center;
+        img {
+          height: unset;
+        }
+        &:hover {
+          scale: 1;
+        }
+        .heading {
+          color: white;
+          font-size: 18px;
+          margin: 10px 0;
+        }
+      }
+    }
+  }
+}
