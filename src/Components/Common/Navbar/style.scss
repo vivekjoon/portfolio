@@ -1,7 +1,4 @@
 .main_logo_wrapper {
-  position: fixed;
-  top: 0;
-  left: 10px;
   img {
     width: 100px;
   }
@@ -51,14 +48,6 @@
 }
 
 @media (max-width: 700px) {
-  .main_logo_wrapper {
-    position: fixed;
-    top: 0;
-    left: 10px;
-    img {
-      width: 100px;
-    }
-  }
   .navbar-wrapper {
     height: 100%;
     flex-direction: row;
@@ -68,7 +57,7 @@
     position: fixed;
     background-color: rgba(23, 23, 23, 0.7);
     backdrop-filter: blur(8px);
-    top: 91vh;
+    top: 92dvh;
     z-index: 9;
     .nav-items {
       background-color: #171717;

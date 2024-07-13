@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./style.scss";
 import { NavbarItems } from "../../../Constants";
-import MyLogo from "../../../Assets/VivekJoon.png";
 
 const Navbar = () => {
   const [selected, setSelected] = useState("");
@@ -38,9 +37,6 @@ const Navbar = () => {
 
   return (
     <>
-      <div className="main_logo_wrapper">
-        <img src={MyLogo} />
-      </div>
       <nav className="navbar-wrapper h-[100vh]">
         {NavbarItems?.map((item, index) => {
           return (

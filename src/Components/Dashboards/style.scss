@@ -4,13 +4,21 @@
 }
 
 @media (max-width: 700px) {
-  .download_cv_btn,
-  .login-btn {
-    font-size: 12px;
-    top: 32px;
-  }
-
-  .login-btn {
-    right: 180px;
+  .btn-wrapper {
+    background-color: rgba(23, 23, 23, 0.7);
+    backdrop-filter: blur(8px);
+    .main_logo_wrapper {
+      width: 60px;
+    }
+    .right {
+      .download_cv_btn,
+      .login-btn {
+        font-size: 12px;
+      }
+      .login-btn {
+        font-size: 12px;
+        margin-right: 10px;
+      }
+    }
   }
 }
