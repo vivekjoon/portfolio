@@ -46,6 +46,9 @@
       transform-style: preserve-3d;
       &.flipped {
         transform: rotateY(180deg);
+        .back {
+          display: none;
+        }
       }
 
       .front,

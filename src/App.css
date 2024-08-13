@@ -12,3 +12,8 @@
     transition: transform ease-out 0ms;
     z-index: 1000;
   }
+  @media (max-width: 1024px) {
+    #cursor {
+      display: none;
+    }
+  }

@@ -49,28 +49,28 @@ const Dashboard = () => {
   return (
     <div className="dashboard-wrapper">
       <div id="cursor"></div>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <>
-              <Navbar />
-              {returnDownloadButton()}
-              <div className="dashboards">
+      <Navbar />
+      {returnDownloadButton()}
+      <div className="dashboards">
+        <Routes>
+          <Route
+            path="/"
+            element={
+              <>
                 <Home />
-                <Skills />
-                <Work />
-                <Blogs />
-                <ContactMe />
-              </div>
-            </>
-          }
-        />
+              </>
+            }
+          />
 
-        <Route path="/login" element={<HerComponent />} />
-        <Route path="/her/home" element={<HerHome />} />
-        <Route path="*" element={<Navigate to="/" />} />
-      </Routes>
+          <Route path="/login" element={<HerComponent />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/work" element={<Work />} />
+          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/contact-me" element={<ContactMe />} />
+          <Route path="/her/home" element={<HerHome />} />
+          <Route path="*" element={<Navigate to="/" />} />
+        </Routes>
+      </div>
     </div>
   );
 };

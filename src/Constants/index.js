@@ -51,11 +51,11 @@ import DemistifyBlog from "../Assets/Blogs/demistify_blog.webp";
 export const NavbarItems = [
   { name: "Home", toLink: "/", icon: <HomeIcon />, id: "home" },
   { name: "Skills", toLink: "/skills", icon: <SkillsIcon />, id: "skills" },
-  { name: "Projects", toLink: "/projects", icon: <WorkIcon />, id: "work" },
-  { name: "Blogs", toLink: "/blog", icon: <BlogIcon />, id: "blog" },
+  { name: "Projects", toLink: "/work", icon: <WorkIcon />, id: "work" },
+  { name: "Blogs", toLink: "/blogs", icon: <BlogIcon />, id: "blog" },
   {
     name: "Contact Me",
-    toLink: "/contact",
+    toLink: "/contact-me",
     icon: <MailIcon />,
     id: "contact_me",
   },
